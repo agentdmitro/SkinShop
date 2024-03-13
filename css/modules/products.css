@@ -1,0 +1,134 @@
+body ul.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 2rem;
+  margin-top: 5.5rem;
+}
+@media only screen and (max-width: 768px) {
+  body ul.products {
+    gap: 4rem 2rem;
+    margin-top: 4rem;
+  }
+}
+body ul.products li.product {
+  display: block;
+  text-align: center;
+  width: calc(25% - 1.5rem) !important;
+}
+@media only screen and (max-width: 768px) {
+  body ul.products li.product {
+    width: calc(50% - 1rem) !important;
+  }
+}
+body ul.products li.product:hover .product__card-img img {
+  transform: scale(1.15);
+}
+body ul.products li.product:hover .product__card-img span {
+  opacity: 1;
+}
+
+.product__breadcrumbs {
+  color: #050505;
+  padding: 2rem 0;
+}
+.product__breadcrumbs a,
+.product__breadcrumbs span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+.product__breadcrumbs a:hover {
+  color: #6b5e56;
+}
+.product__card {
+  text-align: center;
+}
+.product__card-img {
+  height: 28.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+@media only screen and (max-width: 576px) {
+  .product__card-img {
+    height: 18rem;
+  }
+}
+.product__card-img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+.product__card-img span {
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  border-radius: 50%;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.378);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none !important;
+}
+.product__card-img span img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+@media (any-hover: hover) {
+  .product__card-img span {
+    opacity: 0;
+  }
+  .product__card-img span:hover {
+    background-color: #d8d8d8;
+  }
+}
+.product__card h6 {
+  font-weight: 400;
+  text-transform: none;
+}
+.product__card-info {
+  margin-top: 2rem;
+}
+.product__card-info * {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.product__card-price {
+  color: #5e5e5e;
+}
+@media only screen and (max-width: 576px) {
+  .product__card-price {
+    margin-top: 1rem;
+  }
+}
+
+.products__bttn {
+  margin-top: 5.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .products__bttn {
+    margin-top: 6rem;
+  }
+}
+
+.woocommerce .products ul::after,
+.woocommerce .products ul::before,
+.woocommerce ul.products::after,
+.woocommerce ul.products::before {
+  display: none;
+}
+
+.woocommerce .products ul,
+.woocommerce ul.products {
+  margin: 0;
+  margin-top: 5.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce .products ul,
+  .woocommerce ul.products {
+    margin-top: 4rem;
+  }
+}

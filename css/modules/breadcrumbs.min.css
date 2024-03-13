@@ -1,0 +1,12 @@
+.breadcrumbs__wrap {
+  color: #d8d8d8;
+  font-size: 1.6rem;
+}
+.breadcrumbs__wrap a {
+  font-size: inherit;
+}
+@media only screen and (max-width: 576px) {
+  .breadcrumbs__wrap {
+    font-size: 1.2rem;
+  }
+}

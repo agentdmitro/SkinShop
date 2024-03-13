@@ -1,0 +1,119 @@
+.woocommerce ul.order_details {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .woocommerce table.shop_table tr th:last-child,
+  .woocommerce table.shop_table tr td:last-child {
+    text-align: right;
+  }
+}
+
+.woocommerce-order-details {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .woocommerce ul.order_details {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .woocommerce ul.order_details li {
+    margin: 0 !important;
+    padding-top: 2rem;
+    border-top: 1px solid #d9d9d9 !important;
+  }
+}
+
+.woocommerce ul.order_details::after,
+.woocommerce ul.order_details::before {
+  display: none;
+}
+
+.woocommerce .woocommerce-customer-details address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .woocommerce-columns--addresses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+
+.woocommerce a.remove {
+  color: #000000 !important;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  font-weight: 400;
+  text-align: right;
+  width: auto;
+  height: auto;
+  transition: all 0.2s ease !important;
+}
+.woocommerce a.remove:hover {
+  color: #000 !important;
+  text-decoration: underline;
+  background: none !important;
+}
+
+.woocommerce-order-received h5 {
+  margin-bottom: 1rem;
+}
+.woocommerce-order-received .addresses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.woocommerce-order-received .addresses::before, .woocommerce-order-received .addresses::after {
+  display: none !important;
+}
+.woocommerce-order-received .addresses > div {
+  flex: calc(50% - 1rem);
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce-order-received .addresses > div {
+    flex: 100%;
+  }
+}
+.woocommerce-order-received table.shop_table {
+  display: table;
+}
+.woocommerce-order-received table.shop_table thead th {
+  color: #ffffff;
+  background: #000000;
+}
+.woocommerce-order-received section {
+  padding: 1rem 0;
+}
+.woocommerce-order-received ul.order_details {
+  display: flex;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+.woocommerce-order-received ul.order_details li {
+  border-right-style: solid;
+}
+@media only screen and (max-width: 768px) {
+  .woocommerce-order-received ul.order_details {
+    flex-direction: column;
+  }
+  .woocommerce-order-received ul.order_details li {
+    border-right: none;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    border-top: 1px solid #000000;
+  }
+  .woocommerce-order-received ul.order_details li:last-of-type {
+    border-top: 1px solid #000000;
+  }
+}

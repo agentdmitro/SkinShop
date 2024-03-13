@@ -1,0 +1,80 @@
+.politics h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050505;
+  margin-bottom: 24px;
+}
+
+.politics h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050505;
+}
+
+.politics__top {
+  margin-bottom: 5rem;
+}
+
+.contact__data h2 {
+  margin-bottom: 24px;
+}
+
+.contact__data {
+  display: flex;
+  flex-direction: column;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  margin-bottom: 5rem;
+}
+
+.secure__info h2 {
+  margin-bottom: 24px;
+}
+
+.delivery h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #050505;
+  margin-bottom: 12px;
+}
+
+.delivery__top h1 {
+  margin-bottom: 5rem;
+}
+
+.delivery__middle {
+  margin-bottom: 5rem;
+}
+
+.delivery__middle p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.delivery__bottom p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.contract h1 {
+  margin-bottom: 24px;
+}
+
+.contract__block {
+  margin-bottom: 5rem;
+}
+
+.contract__block h3 {
+  margin-bottom: 24px;
+}
+
+.contract__block p:not(:last-child) {
+  margin-bottom: 16px;
+}

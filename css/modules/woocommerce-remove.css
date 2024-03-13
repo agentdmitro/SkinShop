@@ -1,0 +1,40 @@
+.woocommerce-breadcrumb,
+.woocommerce-message,
+.woocommerce-result-count,
+.woocommerce-ordering,
+.woocommerce-privacy-policy-text,
+.woocommerce-NoticeGroup {
+  display: none !important;
+}
+
+.woocommerce .woocommerce-billing-fields::after,
+.woocommerce .woocommerce-billing-fields::before,
+.woocommerce .woocommerce-shipping-fields::after,
+.woocommerce .woocommerce-shipping-fields::before,
+.woocommerce-page .woocommerce-billing-fields::after,
+.woocommerce-page .woocommerce-billing-fields::before,
+.woocommerce-page .woocommerce-shipping-fields::after,
+.woocommerce-page .woocommerce-shipping-fields::before,
+.woocommerce .col2-set::after,
+.woocommerce .col2-set::before,
+.woocommerce-page .col2-set::after,
+.woocommerce-page .col2-set::before,
+#add_payment_method #payment ul.payment_methods::after,
+#add_payment_method #payment ul.payment_methods::before,
+.woocommerce-cart #payment ul.payment_methods::after,
+.woocommerce-cart #payment ul.payment_methods::before,
+.woocommerce-checkout #payment ul.payment_methods::after,
+.woocommerce-checkout #payment ul.payment_methods::before {
+  display: none !important;
+}
+
+p[role=status],
+.wpcf7-response-output,
+.screen-reader-response {
+  display: none;
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 1rem;
+  color: rgb(210, 59, 59);
+}

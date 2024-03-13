@@ -1,0 +1,83 @@
+.video-frame {
+  border-radius: 1.6rem;
+  overflow: hidden;
+  cursor: pointer;
+  height: 125%;
+}
+.video-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s linear;
+}
+.video-frame .iframe {
+  width: 100%;
+  display: block;
+  padding-bottom: 56.25%;
+  z-index: -1;
+}
+.video-frame.video-play .iframe {
+  z-index: 10;
+}
+.video-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+.video-frame:before {
+  content: "";
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+  left: 0rem;
+  right: 0;
+  margin: 0 auto;
+  top: calc(50% - 3.5rem);
+  transition: 0.2s ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  .video-frame:before {
+    width: 10rem;
+    height: 10rem;
+    top: calc(50% - 5rem);
+  }
+}
+.video-frame:after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  background: url("../../img/icons/play.svg") no-repeat center center;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: calc(50% - 2rem);
+  transition: 0.2s ease-in-out;
+}
+.video-frame:hover:before, .video-frame:hover:after {
+  transform: scale(1.1);
+}
+.video-frame:active:before, .video-frame:active:after {
+  transform: scale(0.95);
+}
+.video-frame.video-play:before, .video-frame.video-play:after {
+  opacity: 0;
+}
+.video-frame.video-play iframe {
+  opacity: 1;
+}
